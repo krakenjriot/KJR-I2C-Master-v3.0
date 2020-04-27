@@ -54,14 +54,14 @@ void loop() {
     // всё OK
     case DHT_OK:
       // выводим показания влажности и температуры
-      Serial.print("Temperature = ");
-      Serial.print(dht.getTemperatureC());
+      //Serial.print("Temperature = ");
+      //Serial.print(dht.getTemperatureC());
       temp = dht.getTemperatureC();
-      Serial.println(" C \t"); 
-      Serial.print("Humidity = ");
-      Serial.print(dht.getHumidity());
+      //Serial.println(" C \t"); 
+      //Serial.print("Humidity = ");
+      //Serial.print(dht.getHumidity());
       hum = dht.getHumidity();
-      Serial.println(" %");
+      //Serial.println(" %");
       break;
     // ошибка контрольной суммы
     case DHT_ERROR_CHECKSUM:
